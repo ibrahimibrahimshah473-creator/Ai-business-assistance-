@@ -1,0 +1,99 @@
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formTitle {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--ink-secondary);
+}
+
+.field input,
+.field select {
+  background: var(--surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  color: var(--ink-primary);
+  font-size: 0.88rem;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--accent-gold);
+  outline: none;
+}
+
+.error {
+  color: var(--accent-danger);
+  font-size: 0.82rem;
+}
+
+.success {
+  color: var(--accent-success);
+  font-size: 0.82rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.apptCard {
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.apptService {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.apptMeta {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  margin-top: 2px;
+}
+
+.apptTime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent-gold);
+  white-space: nowrap;
+}
+
+@media (min-width: 960px) {
+  .grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
